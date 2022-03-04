@@ -15,56 +15,52 @@
     <title>Frontend Mentor | Stats preview card component</title>
 
     <link rel="stylesheet" href="css/main.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <style></style>
   </head>
   <body>
-    <main>
+    <main class="main">
       <div class="card">
-        <img src="./images/image-header-mobile.jpg" alt="" class="card__img" />
-        <section class="card__text">
-          <h1>Get <span>insights</span> that help your business grow.</h1>
-          <p>
+        <div class="card__img-container">
+          <img class="card__img" src="images/image-header-mobile.jpg" alt="" />
+        </div>
+        <section class="card__textbox">
+          <h1 class="card__heading">
+            Get <span class="card__heading--purple">insights</span> that help
+            your business grow.
+          </h1>
+          <p class="card__description">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <ul>
+          <ul class="card__numbers">
             <li>
               <ul>
-                <li>10k+</li>
-                <li>COMPANIES</li>
+                <li class="number">10k+</li>
+                <li class="property">COMPANIES</li>
               </ul>
             </li>
             <li>
               <ul>
-                <li>314</li>
-                <li>TEMPLATES</li>
+                <li class="number">314</li>
+                <li class="property">TEMPLATES</li>
               </ul>
             </li>
             <li>
               <ul>
-                <li>12M+</li>
-                <li>QUERIES</li>
+                <li class="number">12M+</li>
+                <li class="property">QUERIES</li>
               </ul>
             </li>
           </ul>
         </section>
       </div>
     </main>
-    <footer class="attribution">
+    <footer class="footer">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://rpturbina.github.io" target="_blank">rpturbina</a>.
     </footer>
   </body>
 </html>
