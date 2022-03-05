@@ -53,6 +53,7 @@ body {
   text-align: center;
   background-color: $card-bg-clr;
   border-radius: 8px;
+  transition: all 0.5s ease;
 
   &__img-container {
     max-width: 100%;
@@ -81,7 +82,7 @@ body {
     font-size: 28px;
     color: $main-head-stats-clr;
 
-    &--purple {
+    &--violet {
       color: $accent-clr;
     }
   }
@@ -122,5 +123,34 @@ body {
   color: $main-head-stats-clr;
   a {
     color: $accent-clr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+
+    &__img-container {
+      border-top-left-radius: 0px;
+      border-bottom-right-radius: 8px;
+    }
+
+    &__textbox {
+      flex-basis: 50%;
+      text-align: left;
+      padding: 70px;
+    }
+
+    &__heading {
+      font-size: 36px;
+    }
+
+    &__status {
+      display: flex;
+      column-gap: 70px;
+    }
   }
 }

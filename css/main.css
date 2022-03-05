@@ -37,6 +37,8 @@ body {
   text-align: center;
   background-color: #1b1938;
   border-radius: 8px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .card__img-container {
@@ -67,7 +69,7 @@ body {
   color: white;
 }
 
-.card__heading--purple {
+.card__heading--violet {
   color: #aa5cdb;
 }
 
@@ -109,5 +111,41 @@ body {
 
 .footer a {
   color: #aa5cdb;
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    max-width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .card__img-container {
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 8px;
+  }
+  .card__textbox {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: left;
+    padding: 70px;
+  }
+  .card__heading {
+    font-size: 36px;
+  }
+  .card__status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 70px;
+            column-gap: 70px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
